@@ -1,0 +1,586 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls   s/call   s/call  name    
+ 43.93      2.71     2.71 38804685     0.00     0.00  number_of_bits
+ 28.96      4.50     1.79 25212444     0.00     0.00  number_of_bits
+ 10.03      5.12     0.62   418690     0.00     0.00  reload_occupancy
+  4.29      5.39     0.27   404821     0.00     0.00  note_position
+  3.56      5.61     0.22   418692     0.00     0.00  reload_attacks
+  1.62      5.71     0.10  1255490     0.00     0.00  put_bishop_attacks
+  0.73      5.75     0.04 38804685     0.00     0.00  first_index
+  0.73      5.80     0.04 15064812     0.00     0.00  add_attack
+  0.57      5.83     0.04                             from_U64_to_list
+  0.49      5.87     0.03 25506186     0.00     0.00  first_index
+  0.49      5.89     0.03 16275873     0.00     0.00  check_restriction
+  0.40      5.92     0.03 10062544     0.00     0.00  diagonal_attack
+  0.32      5.94     0.02  1255985     0.00     0.00  put_rook_attacks
+  0.32      5.96     0.02  1255194     0.00     0.00  opponent_bishop_attack
+  0.32      5.98     0.02   404926     0.00     0.00  maj_min_max
+  0.32      6.00     0.02        1     0.02     0.02  get_number_of_position
+  0.24      6.01     0.01 15395952     0.00     0.00  pinned_restriction
+  0.16      6.03     0.01 32785202     0.00     0.00  loop_condition
+  0.16      6.04     0.01  5020776     0.00     0.00  diagonal_xray_attack
+  0.16      6.04     0.01  2614030     0.00     0.00  rank_attack
+  0.16      6.05     0.01  1255815     0.00     0.00  rank_xray_attack
+  0.16      6.07     0.01   418689     0.00     0.00  malloc_information
+  0.16      6.08     0.01   418688     0.00     0.00  copy_board
+  0.16      6.08     0.01   418688     0.00     0.00  copy_state
+  0.16      6.09     0.01   404925     0.00     0.00  add_brother
+  0.16      6.11     0.01   107648     0.00     0.00  set_occupancy
+  0.16      6.12     0.01        2     0.01     0.01  set_value
+  0.16      6.12     0.01        1     0.01     5.98  create_tree_with_alpha_beta
+  0.16      6.13     0.01                             _init
+  0.16      6.14     0.01                             main
+  0.16      6.16     0.01                             note_position_with_model
+  0.08      6.16     0.01  7532406     0.00     0.00  add_attack_and_xray
+  0.08      6.17     0.01  2614030     0.00     0.00  file_attack
+  0.08      6.17     0.01    22177     0.00     0.00  get_piece_from_position
+  0.08      6.17     0.01       64     0.00     0.00  bishop_attack
+  0.08      6.18     0.01       64     0.00     0.00  rook_attack
+  0.00      6.18     0.00 16694670     0.00     0.00  is_attacked
+  0.00      6.18     0.00 10164027     0.00     0.00  add_move
+  0.00      6.18     0.00  1255815     0.00     0.00  file_xray_attack
+  0.00      6.18     0.00  1255815     0.00     0.00  opponent_rook_attack
+  0.00      6.18     0.00   464506     0.00     0.00  add_bit2
+  0.00      6.18     0.00   418690     0.00     0.00  make_move
+  0.00      6.18     0.00   418690     0.00     0.00  malloc_moves
+  0.00      6.18     0.00   418689     0.00     0.00  malloc_game
+  0.00      6.18     0.00   418688     0.00     0.00  copy_occupancy
+  0.00      6.18     0.00   102400     0.00     0.00  rook_attack_on_board
+  0.00      6.18     0.00    13763     0.00     0.00  free_moves
+  0.00      6.18     0.00     5248     0.00     0.00  bishop_attack_on_board
+  0.00      6.18     0.00      192     0.00     0.00  case_vers_pixel
+  0.00      6.18     0.00      128     0.00     0.00  pawn_attack
+  0.00      6.18     0.00      128     0.00     0.00  pawn_movement
+  0.00      6.18     0.00       96     0.00     0.00  draw_piece
+  0.00      6.18     0.00       96     0.00     0.00  first_index
+  0.00      6.18     0.00       96     0.00     0.00  from_int_to_piece
+  0.00      6.18     0.00       96     0.00     0.00  number_of_bits
+  0.00      6.18     0.00       64     0.00     0.00  king_attack
+  0.00      6.18     0.00       64     0.00     0.00  knight_attack
+  0.00      6.18     0.00       64     0.00     0.00  malloc_bishop
+  0.00      6.18     0.00       64     0.00     0.00  malloc_rook
+  0.00      6.18     0.00       32     0.00     0.00  add_bit
+  0.00      6.18     0.00        4     0.00     0.00  pixel_vers_case
+  0.00      6.18     0.00        3     0.00     0.00  draw_all_pieces
+  0.00      6.18     0.00        3     0.00     0.00  draw_board
+  0.00      6.18     0.00        3     0.00     0.00  get_mouse_click
+  0.00      6.18     0.00        2     0.00     0.00  get_movement
+  0.00      6.18     0.00        2     0.00     0.00  in_board
+  0.00      6.18     0.00        2     0.00     0.00  load_magic_numbers
+  0.00      6.18     0.00        1     0.00     0.00  create_window
+  0.00      6.18     0.00        1     0.00     0.00  from_fen_to_bitboard
+  0.00      6.18     0.00        1     0.00     0.00  get_best_move
+  0.00      6.18     0.00        1     0.00     0.00  get_move
+  0.00      6.18     0.00        1     0.00     6.12  init_game
+  0.00      6.18     0.00        1     0.00     0.11  init_pieces_attacks
+  0.00      6.18     0.00        1     0.00     0.01  load_bishop_squares
+  0.00      6.18     0.00        1     0.00     0.10  load_rook_squares
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2022 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) for 0.16% of 6.18 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]     99.1    0.01    6.12                 main [1]
+                0.00    6.12       1/1           init_game [2]
+-----------------------------------------------
+                0.00    6.12       1/1           main [1]
+[2]     98.9    0.00    6.12       1         init_game [2]
+                0.01    5.97       1/1           create_tree_with_alpha_beta [3]
+                0.00    0.11       1/1           init_pieces_attacks [11]
+                0.02    0.00       1/1           get_number_of_position [25]
+                0.01    0.00       2/2           set_value [34]
+                0.00    0.00       3/418692      reload_attacks [7]
+                0.00    0.00       1/418690      reload_occupancy [10]
+                0.00    0.00       1/418689      malloc_information [30]
+                0.00    0.00       2/418690      make_move [42]
+                0.00    0.00       3/3           draw_board [67]
+                0.00    0.00       2/2           get_movement [69]
+                0.00    0.00       1/418690      malloc_moves [49]
+                0.00    0.00       1/1           create_window [72]
+                0.00    0.00       1/1           from_fen_to_bitboard [73]
+                0.00    0.00       1/418689      malloc_game [50]
+                0.00    0.00       1/1           get_best_move [74]
+                0.00    0.00       1/1           get_move [75]
+-----------------------------------------------
+                              418688             create_tree_with_alpha_beta [3]
+                0.01    5.97       1/1           init_game [2]
+[3]     96.7    0.01    5.97       1+418688  create_tree_with_alpha_beta [3]
+                0.27    2.76  404821/404821      note_position [4]
+                0.22    2.04  418689/418692      reload_attacks [7]
+                0.62    0.00  418689/418690      reload_occupancy [10]
+                0.02    0.00  404926/404926      maj_min_max [24]
+                0.01    0.00  418688/418688      copy_board [31]
+                0.01    0.00  418688/418688      copy_state [32]
+                0.01    0.00  404925/404925      add_brother [33]
+                0.01    0.00  418688/418689      malloc_information [30]
+                0.00    0.00  418688/418690      make_move [42]
+                0.00    0.00  418689/418690      malloc_moves [49]
+                0.00    0.00  418688/418688      copy_occupancy [51]
+                0.00    0.00  418688/418689      malloc_game [50]
+                0.00    0.00   13763/13763       free_moves [52]
+                              418688             create_tree_with_alpha_beta [3]
+-----------------------------------------------
+                0.27    2.76  404821/404821      create_tree_with_alpha_beta [3]
+[4]     48.9    0.27    2.76  404821         note_position [4]
+                0.04    2.71 38804685/38804685     first_index [5]
+-----------------------------------------------
+                0.04    2.71 38804685/38804685     note_position [4]
+[5]     44.7    0.04    2.71 38804685         first_index [5]
+                2.71    0.00 38804685/38804685     number_of_bits [6]
+-----------------------------------------------
+                2.71    0.00 38804685/38804685     first_index [5]
+[6]     43.9    2.71    0.00 38804685         number_of_bits [6]
+-----------------------------------------------
+                0.00    0.00       3/418692      init_game [2]
+                0.22    2.04  418689/418692      create_tree_with_alpha_beta [3]
+[7]     36.5    0.22    2.04  418692         reload_attacks [7]
+                0.03    1.70 24254730/25506186     first_index [8]
+                0.10    0.00 1255490/1255490     put_bishop_attacks [13]
+                0.02    0.08 1255194/1255194     opponent_bishop_attack [14]
+                0.00    0.04 1255815/1255815     opponent_rook_attack [18]
+                0.03    0.00 16275873/16275873     check_restriction [21]
+                0.02    0.00 1255985/1255985     put_rook_attacks [23]
+                0.01    0.00 15395952/15395952     pinned_restriction [26]
+                0.00    0.00 10164027/10164027     add_move [47]
+                0.00    0.00  418797/16694670     is_attacked [46]
+-----------------------------------------------
+                0.00    0.00      64/25506186     bishop_attack [39]
+                0.00    0.00      64/25506186     rook_attack [40]
+                0.00    0.00    5248/25506186     bishop_attack_on_board [45]
+                0.00    0.01  102400/25506186     rook_attack_on_board [38]
+                0.00    0.08 1143680/25506186     set_occupancy [15]
+                0.03    1.70 24254730/25506186     reload_attacks [7]
+[8]     29.4    0.03    1.79 25506186         first_index [8]
+                1.79    0.00 25212316/25212444     number_of_bits [9]
+-----------------------------------------------
+                0.00    0.00      64/25212444     load_bishop_squares [37]
+                0.00    0.00      64/25212444     load_rook_squares [12]
+                1.79    0.00 25212316/25212444     first_index [8]
+[9]     29.0    1.79    0.00 25212444         number_of_bits [9]
+-----------------------------------------------
+                0.00    0.00       1/418690      init_game [2]
+                0.62    0.00  418689/418690      create_tree_with_alpha_beta [3]
+[10]    10.0    0.62    0.00  418690         reload_occupancy [10]
+-----------------------------------------------
+                0.00    0.11       1/1           init_game [2]
+[11]     1.8    0.00    0.11       1         init_pieces_attacks [11]
+                0.00    0.10       1/1           load_rook_squares [12]
+                0.00    0.01       1/1           load_bishop_squares [37]
+                0.00    0.00     128/128         pawn_attack [54]
+                0.00    0.00     128/128         pawn_movement [55]
+                0.00    0.00      64/64          knight_attack [61]
+                0.00    0.00      64/64          king_attack [60]
+-----------------------------------------------
+                0.00    0.10       1/1           init_pieces_attacks [11]
+[12]     1.6    0.00    0.10       1         load_rook_squares [12]
+                0.01    0.08  102400/107648      set_occupancy [15]
+                0.00    0.01  102400/102400      rook_attack_on_board [38]
+                0.01    0.00      64/64          rook_attack [40]
+                0.00    0.00      64/25212444     number_of_bits [9]
+                0.00    0.00      64/64          malloc_rook [63]
+                0.00    0.00       1/2           load_magic_numbers [71]
+-----------------------------------------------
+                0.10    0.00 1255490/1255490     reload_attacks [7]
+[13]     1.6    0.10    0.00 1255490         put_bishop_attacks [13]
+-----------------------------------------------
+                0.02    0.08 1255194/1255194     reload_attacks [7]
+[14]     1.6    0.02    0.08 1255194         opponent_bishop_attack [14]
+                0.00    0.03 5020776/7532406     add_attack_and_xray [16]
+                0.01    0.02 5020776/5020776     diagonal_xray_attack [22]
+                0.01    0.00 5020776/10062544     diagonal_attack [20]
+-----------------------------------------------
+                0.00    0.00    5248/107648      load_bishop_squares [37]
+                0.01    0.08  102400/107648      load_rook_squares [12]
+[15]     1.5    0.01    0.08  107648         set_occupancy [15]
+                0.00    0.08 1143680/25506186     first_index [8]
+-----------------------------------------------
+                0.00    0.02 2511630/7532406     opponent_rook_attack [18]
+                0.00    0.03 5020776/7532406     opponent_bishop_attack [14]
+[16]     0.8    0.01    0.04 7532406         add_attack_and_xray [16]
+                0.04    0.00 15064812/15064812     add_attack [17]
+-----------------------------------------------
+                0.04    0.00 15064812/15064812     add_attack_and_xray [16]
+[17]     0.7    0.04    0.00 15064812         add_attack [17]
+                0.00    0.00   45816/464506      add_bit2 [48]
+-----------------------------------------------
+                0.00    0.04 1255815/1255815     reload_attacks [7]
+[18]     0.7    0.00    0.04 1255815         opponent_rook_attack [18]
+                0.00    0.02 2511630/7532406     add_attack_and_xray [16]
+                0.01    0.00 1255815/1255815     rank_xray_attack [27]
+                0.00    0.00 1255815/2614030     rank_attack [29]
+                0.00    0.00 1255815/2614030     file_attack [41]
+                0.00    0.00 1255815/1255815     file_xray_attack [44]
+-----------------------------------------------
+                                                 <spontaneous>
+[19]     0.6    0.04    0.00                 from_U64_to_list [19]
+-----------------------------------------------
+                0.00    0.00   20992/10062544     bishop_attack_on_board [45]
+                0.01    0.00 5020776/10062544     diagonal_xray_attack [22]
+                0.01    0.00 5020776/10062544     opponent_bishop_attack [14]
+[20]     0.5    0.03    0.01 10062544         diagonal_attack [20]
+                0.01    0.00 22215931/32785202     loop_condition [28]
+-----------------------------------------------
+                0.03    0.00 16275873/16275873     reload_attacks [7]
+[21]     0.5    0.03    0.00 16275873         check_restriction [21]
+                0.00    0.00 16275873/16694670     is_attacked [46]
+-----------------------------------------------
+                0.01    0.02 5020776/5020776     opponent_bishop_attack [14]
+[22]     0.5    0.01    0.02 5020776         diagonal_xray_attack [22]
+                0.01    0.00 5020776/10062544     diagonal_attack [20]
+                0.00    0.00 10569271/32785202     loop_condition [28]
+-----------------------------------------------
+                0.02    0.00 1255985/1255985     reload_attacks [7]
+[23]     0.3    0.02    0.00 1255985         put_rook_attacks [23]
+-----------------------------------------------
+                0.02    0.00  404926/404926      create_tree_with_alpha_beta [3]
+[24]     0.3    0.02    0.00  404926         maj_min_max [24]
+-----------------------------------------------
+                              418688             get_number_of_position [25]
+                0.02    0.00       1/1           init_game [2]
+[25]     0.3    0.02    0.00       1+418688  get_number_of_position [25]
+                              418688             get_number_of_position [25]
+-----------------------------------------------
+                0.01    0.00 15395952/15395952     reload_attacks [7]
+[26]     0.2    0.01    0.00 15395952         pinned_restriction [26]
+-----------------------------------------------
+                0.01    0.00 1255815/1255815     opponent_rook_attack [18]
+[27]     0.2    0.01    0.00 1255815         rank_xray_attack [27]
+                0.00    0.00 1255815/2614030     rank_attack [29]
+-----------------------------------------------
+                0.00    0.00 10569271/32785202     diagonal_xray_attack [22]
+                0.01    0.00 22215931/32785202     diagonal_attack [20]
+[28]     0.2    0.01    0.00 32785202         loop_condition [28]
+-----------------------------------------------
+                0.00    0.00  102400/2614030     rook_attack_on_board [38]
+                0.00    0.00 1255815/2614030     rank_xray_attack [27]
+                0.00    0.00 1255815/2614030     opponent_rook_attack [18]
+[29]     0.2    0.01    0.00 2614030         rank_attack [29]
+-----------------------------------------------
+                0.00    0.00       1/418689      init_game [2]
+                0.01    0.00  418688/418689      create_tree_with_alpha_beta [3]
+[30]     0.2    0.01    0.00  418689         malloc_information [30]
+-----------------------------------------------
+                0.01    0.00  418688/418688      create_tree_with_alpha_beta [3]
+[31]     0.2    0.01    0.00  418688         copy_board [31]
+-----------------------------------------------
+                0.01    0.00  418688/418688      create_tree_with_alpha_beta [3]
+[32]     0.2    0.01    0.00  418688         copy_state [32]
+-----------------------------------------------
+                0.01    0.00  404925/404925      create_tree_with_alpha_beta [3]
+[33]     0.2    0.01    0.00  404925         add_brother [33]
+-----------------------------------------------
+                0.01    0.00       2/2           init_game [2]
+[34]     0.2    0.01    0.00       2         set_value [34]
+-----------------------------------------------
+                                                 <spontaneous>
+[35]     0.2    0.01    0.00                 note_position_with_model [35]
+-----------------------------------------------
+                                                 <spontaneous>
+[36]     0.2    0.01    0.00                 _init [36]
+-----------------------------------------------
+                0.00    0.01       1/1           init_pieces_attacks [11]
+[37]     0.2    0.00    0.01       1         load_bishop_squares [37]
+                0.01    0.00      64/64          bishop_attack [39]
+                0.00    0.00    5248/107648      set_occupancy [15]
+                0.00    0.00    5248/5248        bishop_attack_on_board [45]
+                0.00    0.00      64/25212444     number_of_bits [9]
+                0.00    0.00      64/64          malloc_bishop [62]
+                0.00    0.00       1/2           load_magic_numbers [71]
+-----------------------------------------------
+                0.00    0.01  102400/102400      load_rook_squares [12]
+[38]     0.1    0.00    0.01  102400         rook_attack_on_board [38]
+                0.00    0.01  102400/25506186     first_index [8]
+                0.00    0.00  102400/2614030     rank_attack [29]
+                0.00    0.00  102400/2614030     file_attack [41]
+-----------------------------------------------
+                0.01    0.00      64/64          load_bishop_squares [37]
+[39]     0.1    0.01    0.00      64         bishop_attack [39]
+                0.00    0.00      64/25506186     first_index [8]
+-----------------------------------------------
+                0.01    0.00      64/64          load_rook_squares [12]
+[40]     0.1    0.01    0.00      64         rook_attack [40]
+                0.00    0.00      64/25506186     first_index [8]
+-----------------------------------------------
+                0.00    0.00  102400/2614030     rook_attack_on_board [38]
+                0.00    0.00 1255815/2614030     file_xray_attack [44]
+                0.00    0.00 1255815/2614030     opponent_rook_attack [18]
+[41]     0.1    0.01    0.00 2614030         file_attack [41]
+-----------------------------------------------
+                0.00    0.00       2/418690      init_game [2]
+                0.00    0.00  418688/418690      create_tree_with_alpha_beta [3]
+[42]     0.1    0.00    0.01  418690         make_move [42]
+                0.01    0.00   22177/22177       get_piece_from_position [43]
+                0.00    0.00  418690/464506      add_bit2 [48]
+-----------------------------------------------
+                0.01    0.00   22177/22177       make_move [42]
+[43]     0.1    0.01    0.00   22177         get_piece_from_position [43]
+-----------------------------------------------
+                0.00    0.00 1255815/1255815     opponent_rook_attack [18]
+[44]     0.0    0.00    0.00 1255815         file_xray_attack [44]
+                0.00    0.00 1255815/2614030     file_attack [41]
+-----------------------------------------------
+                0.00    0.00    5248/5248        load_bishop_squares [37]
+[45]     0.0    0.00    0.00    5248         bishop_attack_on_board [45]
+                0.00    0.00    5248/25506186     first_index [8]
+                0.00    0.00   20992/10062544     diagonal_attack [20]
+-----------------------------------------------
+                0.00    0.00  418797/16694670     reload_attacks [7]
+                0.00    0.00 16275873/16694670     check_restriction [21]
+[46]     0.0    0.00    0.00 16694670         is_attacked [46]
+-----------------------------------------------
+                0.00    0.00 10164027/10164027     reload_attacks [7]
+[47]     0.0    0.00    0.00 10164027         add_move [47]
+-----------------------------------------------
+                0.00    0.00   45816/464506      add_attack [17]
+                0.00    0.00  418690/464506      make_move [42]
+[48]     0.0    0.00    0.00  464506         add_bit2 [48]
+-----------------------------------------------
+                0.00    0.00       1/418690      init_game [2]
+                0.00    0.00  418689/418690      create_tree_with_alpha_beta [3]
+[49]     0.0    0.00    0.00  418690         malloc_moves [49]
+-----------------------------------------------
+                0.00    0.00       1/418689      init_game [2]
+                0.00    0.00  418688/418689      create_tree_with_alpha_beta [3]
+[50]     0.0    0.00    0.00  418689         malloc_game [50]
+-----------------------------------------------
+                0.00    0.00  418688/418688      create_tree_with_alpha_beta [3]
+[51]     0.0    0.00    0.00  418688         copy_occupancy [51]
+-----------------------------------------------
+                0.00    0.00   13763/13763       create_tree_with_alpha_beta [3]
+[52]     0.0    0.00    0.00   13763         free_moves [52]
+-----------------------------------------------
+                0.00    0.00     192/192         draw_all_pieces [66]
+[53]     0.0    0.00    0.00     192         case_vers_pixel [53]
+-----------------------------------------------
+                0.00    0.00     128/128         init_pieces_attacks [11]
+[54]     0.0    0.00    0.00     128         pawn_attack [54]
+-----------------------------------------------
+                0.00    0.00     128/128         init_pieces_attacks [11]
+[55]     0.0    0.00    0.00     128         pawn_movement [55]
+-----------------------------------------------
+                0.00    0.00      96/96          draw_all_pieces [66]
+[56]     0.0    0.00    0.00      96         draw_piece [56]
+-----------------------------------------------
+                0.00    0.00      96/96          draw_all_pieces [66]
+[57]     0.0    0.00    0.00      96         first_index [57]
+                0.00    0.00      96/96          number_of_bits [59]
+-----------------------------------------------
+                0.00    0.00      96/96          draw_all_pieces [66]
+[58]     0.0    0.00    0.00      96         from_int_to_piece [58]
+-----------------------------------------------
+                0.00    0.00      96/96          first_index [57]
+[59]     0.0    0.00    0.00      96         number_of_bits [59]
+-----------------------------------------------
+                0.00    0.00      64/64          init_pieces_attacks [11]
+[60]     0.0    0.00    0.00      64         king_attack [60]
+-----------------------------------------------
+                0.00    0.00      64/64          init_pieces_attacks [11]
+[61]     0.0    0.00    0.00      64         knight_attack [61]
+-----------------------------------------------
+                0.00    0.00      64/64          load_bishop_squares [37]
+[62]     0.0    0.00    0.00      64         malloc_bishop [62]
+-----------------------------------------------
+                0.00    0.00      64/64          load_rook_squares [12]
+[63]     0.0    0.00    0.00      64         malloc_rook [63]
+-----------------------------------------------
+                0.00    0.00      32/32          from_fen_to_bitboard [73]
+[64]     0.0    0.00    0.00      32         add_bit [64]
+-----------------------------------------------
+                0.00    0.00       4/4           get_movement [69]
+[65]     0.0    0.00    0.00       4         pixel_vers_case [65]
+-----------------------------------------------
+                0.00    0.00       3/3           draw_board [67]
+[66]     0.0    0.00    0.00       3         draw_all_pieces [66]
+                0.00    0.00     192/192         case_vers_pixel [53]
+                0.00    0.00      96/96          first_index [57]
+                0.00    0.00      96/96          from_int_to_piece [58]
+                0.00    0.00      96/96          draw_piece [56]
+-----------------------------------------------
+                0.00    0.00       3/3           init_game [2]
+[67]     0.0    0.00    0.00       3         draw_board [67]
+                0.00    0.00       3/3           draw_all_pieces [66]
+-----------------------------------------------
+                0.00    0.00       3/3           get_movement [69]
+[68]     0.0    0.00    0.00       3         get_mouse_click [68]
+-----------------------------------------------
+                0.00    0.00       2/2           init_game [2]
+[69]     0.0    0.00    0.00       2         get_movement [69]
+                0.00    0.00       4/4           pixel_vers_case [65]
+                0.00    0.00       3/3           get_mouse_click [68]
+                0.00    0.00       2/2           in_board [70]
+-----------------------------------------------
+                0.00    0.00       2/2           get_movement [69]
+[70]     0.0    0.00    0.00       2         in_board [70]
+-----------------------------------------------
+                0.00    0.00       1/2           load_bishop_squares [37]
+                0.00    0.00       1/2           load_rook_squares [12]
+[71]     0.0    0.00    0.00       2         load_magic_numbers [71]
+-----------------------------------------------
+                0.00    0.00       1/1           init_game [2]
+[72]     0.0    0.00    0.00       1         create_window [72]
+-----------------------------------------------
+                0.00    0.00       1/1           init_game [2]
+[73]     0.0    0.00    0.00       1         from_fen_to_bitboard [73]
+                0.00    0.00      32/32          add_bit [64]
+-----------------------------------------------
+                0.00    0.00       1/1           init_game [2]
+[74]     0.0    0.00    0.00       1         get_best_move [74]
+-----------------------------------------------
+                0.00    0.00       1/1           init_game [2]
+[75]     0.0    0.00    0.00       1         get_move [75]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2022 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [36] _init                   [8] first_index            [50] malloc_game
+  [17] add_attack             [52] free_moves             [30] malloc_information
+  [16] add_attack_and_xray    [19] from_U64_to_list       [49] malloc_moves
+  [64] add_bit                [73] from_fen_to_bitboard   [63] malloc_rook
+  [48] add_bit2               [58] from_int_to_piece       [4] note_position
+  [33] add_brother            [74] get_best_move          [35] note_position_with_model
+  [47] add_move               [68] get_mouse_click         [6] number_of_bits
+  [39] bishop_attack          [75] get_move               [59] number_of_bits
+  [45] bishop_attack_on_board [69] get_movement            [9] number_of_bits
+  [53] case_vers_pixel        [25] get_number_of_position [14] opponent_bishop_attack
+  [21] check_restriction      [43] get_piece_from_position [18] opponent_rook_attack
+  [31] copy_board             [70] in_board               [54] pawn_attack
+  [51] copy_occupancy          [2] init_game              [55] pawn_movement
+  [32] copy_state             [11] init_pieces_attacks    [26] pinned_restriction
+   [3] create_tree_with_alpha_beta [46] is_attacked       [65] pixel_vers_case
+  [72] create_window          [60] king_attack            [13] put_bishop_attacks
+  [20] diagonal_attack        [61] knight_attack          [23] put_rook_attacks
+  [22] diagonal_xray_attack   [37] load_bishop_squares    [29] rank_attack
+  [66] draw_all_pieces        [71] load_magic_numbers     [27] rank_xray_attack
+  [67] draw_board             [12] load_rook_squares       [7] reload_attacks
+  [56] draw_piece             [28] loop_condition         [10] reload_occupancy
+  [41] file_attack             [1] main                   [40] rook_attack
+  [44] file_xray_attack       [24] maj_min_max            [38] rook_attack_on_board
+   [5] first_index            [42] make_move              [15] set_occupancy
+  [57] first_index            [62] malloc_bishop          [34] set_value

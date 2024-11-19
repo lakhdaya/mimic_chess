@@ -1,0 +1,7 @@
+.vscode
+__pycache__
+code/mimic/data
+.ipynb_checkpoints
+archive
+models
+gmon.out
